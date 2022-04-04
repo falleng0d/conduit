@@ -17,7 +17,7 @@ dependencies:
     git:
       url: https://github.com/keinou/conduit.git
       ref: master
-      path: packages/conduit
+      path: packages/password_hash
   conduit_runtime: ^3.1.1
   crypto: ^3.0.0
   logging: ^1.0.0
