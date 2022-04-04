@@ -2,6 +2,7 @@ name: conduit
 version: 3.1.2
 homepage: https://github.com/conduit-dart/conduit
 description: A modern HTTP server application framework, ORM and OAuth2 provider with OpenAPI 3.0 integration. Foundation for REST, RPC or GraphQL services.
+publish_to: none
 environment:
   sdk: ">=2.12.0 <3.0.0"
 dependencies:
@@ -12,7 +13,11 @@ dependencies:
   conduit_config: ^3.1.1
   conduit_isolate_exec: ^3.1.1
   conduit_open_api: ^3.1.1
-  conduit_password_hash: ^3.1.1
+  conduit_password_hash:
+    git:
+      url: https://github.com/keinou/conduit.git
+      ref: master
+      path: packages/conduit
   conduit_runtime: ^3.1.1
   crypto: ^3.0.0
   logging: ^1.0.0
